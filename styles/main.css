@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f7e018;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .riddle {
+  max-width: 600px;
+  text-align: center;
+  font-family: 'Courier New';
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=main.css.map */

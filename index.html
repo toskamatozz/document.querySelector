@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <title>document.querySelector</title>
+</head>
+<body>
+    <div class="riddle"></div>
+    <img src="./images/thinking-face.png" alt="thinking-face" width="200px">
+    
+    <script>
+        let a = 25;
+        let b = 3;
+        let quest = `Загадка: 
+        Ты берешь в долг у мамы ${a} рублей, и у папы ${a}, всего у тебя ${a + a} рублей. 
+        Идешь в магазин и тратишь там ровно ${a + a - 5}руб. 
+        По дороге домой ты даешь в долг подружке ${b} рубля (ей не хватало на что то). 
+        У тебя остается ${(a + a) - (a + a - 5) - b} рубля. 
+        Ты приходишь домой, отдаешь долг маме - ${a - 24} рубль и папе - ${a - 24} рубль. 
+        Теперь ты должна им по ${a - 1}руб. 
+        Итог: ${a - 1} + ${a - 1} равно ${a + a - 2}, и ${b} рубля тебе отдает подружка, 
+        получается ${(a - 1) + (a - 1) + b}. 
+        Вопрос - откуда взялся рубль?`;
+        let el = document.querySelector('.riddle');
+        el.innerHTML = quest;
+        console.log(typeof quest, el);
+    </script>
+</body>
+</html>

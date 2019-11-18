@@ -1,0 +1,20 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+body    {
+    background: #f7e018;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .riddle    {
+        max-width: 600px;
+        text-align: center;
+        font-family: 'Courier New';
+        font-weight: bolder;
+        font-size: 20px;
+        color: black;
+        margin-bottom: 10px;
+    }
+}
